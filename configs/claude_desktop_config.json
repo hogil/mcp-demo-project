@@ -1,0 +1,125 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:/Users/hgchoi",
+        "D:/project"
+      ]
+    },
+    "git": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "D:/project/.git"
+      ]
+    },
+    "arxiv": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-arxiv"
+      ]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "semantic-scholar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-semantic-scholar"
+      ]
+    },
+    "exa-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-exa"
+      ],
+      "env": {
+        "EXA_API_KEY": "your_exa_api_key_here"
+      }
+    },
+    "mem0": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-mem0"
+      ],
+      "env": {
+        "MEM0_API_KEY": "your_mem0_api_key_here"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token_here"
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "C:/Users/hgchoi/Documents/data.db"
+      ]
+    },
+    "huggingface": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@shreyaskarnik/huggingface-mcp-server"
+      ],
+      "env": {
+        "HUGGINGFACE_API_KEY": "your_huggingface_token_here"
+      }
+    },
+    "paperswithcode": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@hbg/mcp-paperswithcode"
+      ]
+    },
+    "paper-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@openags/paper-search-mcp"
+      ]
+    }
+  }
+}
